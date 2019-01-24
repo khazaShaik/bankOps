@@ -1,0 +1,10 @@
+package com.symbo.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.symbo.domain.PrimaryAccount;
+
+public interface PrimaryAccountDao extends CrudRepository<PrimaryAccount,Long> {
+
+    PrimaryAccount findByAccountNumber (int accountNumber);
+}
